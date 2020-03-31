@@ -1,0 +1,11 @@
+<h1>Eventi Tastiera</h1>
+<input (keyup)="checkTasto($event)">
+<table>
+    <thead></thead>
+    <tbody>
+        <tr *ngFor="let tastiera of eventiTastiera, let i=index">
+            <td>{{i+1}}</td>
+            <td>{{tastiera.key}}</td>
+        </tr>
+    </tbody>
+</table>

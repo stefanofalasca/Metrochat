@@ -1,0 +1,11 @@
+<p>{{treniPartiti}}</p>    
+<div class="listatreni">    
+    <ca-metro *ngFor="let metro of listaTreni" 
+        [datiIn]="metro" 
+        [ora]="now" 
+        (click)="setMetro(metro)"
+        (inPartenza)="partiti($event)"
+        >
+    </ca-metro>    
+</div>
+<ca-dettaglio-treno [treno]="trenoSelezionato"></ca-dettaglio-treno>
