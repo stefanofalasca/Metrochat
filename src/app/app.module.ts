@@ -1,5 +1,7 @@
+import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,8 @@ import { NotizieComponentComponent } from './notizie-component/notizie-component
 import { TastieraComponent } from './tastiera/tastiera.component';
 import { MetroComponent } from './metro/metro.component';
 import { DettaglioTrenoComponent } from './treni/dettaglio-treno/dettaglio-treno.component';
+import { PreferitiComponent } from './preferiti/preferiti.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,13 @@ import { DettaglioTrenoComponent } from './treni/dettaglio-treno/dettaglio-treno
     NotizieComponentComponent,
     TastieraComponent,
     MetroComponent,
-    DettaglioTrenoComponent
+    DettaglioTrenoComponent,
+    PreferitiComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

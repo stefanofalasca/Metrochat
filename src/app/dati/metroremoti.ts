@@ -2,9 +2,9 @@ import { Messaggio } from './../model/messaggio.model';
 import { Metro } from './../model/metro.model';
 
 export const LISTAMETRO: Metro[]=[
-    {idt:'12345', linea:'Rossa', numpass:12, tempo:125000, numchatting:1},
-    {idt:'67890', linea:'Verde', numpass:12, tempo:145000, numchatting:2},
-    {idt:'09876', linea:'Gialla', numpass:12, tempo:165000, numchatting:3},
+    {idt:'12345', linea:'Rossa', numpass:12, tempo:new Date().getTime()+1000*60, numchatting:1},
+    {idt:'67890', linea:'Verde', numpass:12, tempo:new Date().getTime()+2000*60, numchatting:2},
+    {idt:'09876', linea:'Gialla', numpass:12,tempo:new Date().getTime()+3000*60, numchatting:3},
 ];
 
 export const LISTAMSG: Messaggio[]=[
