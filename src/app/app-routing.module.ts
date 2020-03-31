@@ -9,7 +9,7 @@ const routes: Routes = [
   {path:'inarrivo', component:TreniComponent},
   {path:'preferiti', component:PreferitiComponent},
   {path:'login', component:LoginComponent},
-  {path:'', redirectTo:'inarrivo', component:TreniComponent, pathMatch:'full'}
+  {path:'', redirectTo:'inarrivo', pathMatch:'full'},
 ];
 
 @NgModule({
